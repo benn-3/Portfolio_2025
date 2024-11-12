@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #003366;
+    padding: 10px 20px;
+    color: white;
+}
+/* Add this CSS to your styles.css */
+
+#map {
+    height: 400px;  /* Adjust the height as needed */
+    width: 100%;    /* The map will take up the full width of its container */
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    align-self: start;
+    margin-right: 20px;
+    right: auto;
+    border-radius: 50%;
+    align-content: right;
+    align-content: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-btn {
+    background-color: #f44336;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.contact-section {
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+.contact-info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-info-box {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-info-box h2 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.contact-info-box p {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.contact-details div {
+    margin-bottom: 15px;
+}
+
+.contact-details h3 {
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+.contact-form button {
+    padding: 15px;
+    border: none;
+    background-color: #003366;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f44336;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .contact-info-container {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Responsive Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script async src="https://serpapi.com/search?q=Coffee&google_domain=google.co.in"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo-no-background.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="contact-info">
+                <a href="tel:+919345702484">9345702484</a>
+                <a href="#" class="login-btn">Log In</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-info-container">
+            <div class="contact-info-box">
+                <h2>Contact Us</h2>
+                <p>Get In Touch With Us</p>
+                <div class="contact-details">
+                    <div>
+                        <h3>Call to ask any question</h3>
+                        <p>+91-9345702484</p>
+                    </div>
+                    <div>
+                        <h3>Email us</h3>
+                        <p>info@step2career.com</p>
+                    </div>
+                    <div>
+                        <h3>Visit our office</h3>
+                        <p>Kondampatti, Coimbatore</p>
+                    </div>
+                </div>
+            </div>
+            <div id="react-form"></div>
+            <!-- Map Container -->
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>On a Career Break? Exclusive Infosession for Working Professionals on September 1st</p>
+    </footer>
+
+    <script src="ReactForm.jsx"></script>
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location to be displayed
+            const location = { lat: 11.0168, lng: 76.9558 }; // Coordinates for Coimbatore, India
+
+            // The map, centered at the specified location
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: location,
+            });
+
+            // The marker, positioned at the specified location
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+    </script>
+</body>
+</html>
